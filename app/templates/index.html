@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Pola Kwadratu</title>
+</head>
+<body>
+    <h1>Kalkulator Pola Kwadratu</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="post" action="/">
+        <label for="side_length">Długość boku kwadratu:</label>
+        <input type="text" id="side_length" name="side_length" required>
+        <button type="submit">Oblicz</button>
+    </form>
+</body>
+</html>
